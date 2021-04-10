@@ -5,11 +5,11 @@
     "module": "esnext",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "target": "ES6",
     "experimentalDecorators": true,
-    "target": "es2015",
+    "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
     ],
