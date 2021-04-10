@@ -28,11 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\prueba\prueba.component.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\prueba\prueba.component.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\create-user\create.user.component.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\login\login.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
