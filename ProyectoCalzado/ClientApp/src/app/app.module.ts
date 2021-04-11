@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CreateUserComponent } from './create-user/create.user.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
+import { InformesComponent } from './informes/informes.component';
 
 @NgModule({
   declarations: [
@@ -18,17 +19,18 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     CreateUserComponent,
     FetchDataComponent,
-    LoginComponent
+    LoginComponent,
+    InformesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'create-user', component: CreateUserComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'home', component: HomeComponent },
+      { path: 'informes', component: InformesComponent },
       { path: 'login', component: LoginComponent },
+      { path: '**', pathMatch: 'full', redirectTo: 'home' },
     ])
   ],
   providers: [],
