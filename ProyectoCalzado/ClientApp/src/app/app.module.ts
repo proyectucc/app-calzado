@@ -1,16 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CreateUserComponent } from './create-user/create.user.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
 import { InformesComponent } from './informes/informes.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { InformesComponent } from './informes/informes.component';
     NavMenuComponent,
     HomeComponent,
     CreateUserComponent,
-    FetchDataComponent,
+    InicioComponent,
     LoginComponent,
     InformesComponent
   ],
@@ -26,11 +26,13 @@ import { InformesComponent } from './informes/informes.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: 'login', component: LoginComponent },
       { path: 'home', component: HomeComponent },
       { path: 'informes', component: InformesComponent },
-      { path: 'login', component: LoginComponent },
-      { path: '**', pathMatch: 'full', redirectTo: 'home' },
+      { path: 'inicio', component: InicioComponent },
+      { path: '**', pathMatch: 'full', redirectTo: 'login' },
     ])
   ],
   providers: [],
