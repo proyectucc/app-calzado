@@ -10,9 +10,14 @@ html {
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+  background-color: #F7EAE0;
   }
 }
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.nav-item {
+  align-items: 50%;
 }

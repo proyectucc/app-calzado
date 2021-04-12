@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  background-color: #F7EAE0;
 }
 
 html, body{
@@ -73,6 +74,9 @@ html, body{
   transition: 0.2s ease-out;
 
 }
+.submit:hover {
+  color: #ECA95A
+}
 
 .feedback{
   position: absolute;
@@ -85,4 +89,16 @@ html, body{
   font-size: 12px;
   display: none;
   opacity: 0;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
 }
