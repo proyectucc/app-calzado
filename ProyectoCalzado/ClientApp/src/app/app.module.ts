@@ -11,6 +11,10 @@ import { CreateUserComponent } from './create-user/create.user.component';
 import { LoginComponent } from './login/login.component';
 import { InformesComponent } from './informes/informes.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { FooterComponent } from './footer/footer.component';
+
+/// Rutas
+import { AppRoutingModule } from './apps-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,20 +24,15 @@ import { InicioComponent } from './inicio/inicio.component';
     CreateUserComponent,
     InicioComponent,
     LoginComponent,
-    InformesComponent
+    InformesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: 'login', component: LoginComponent },
-      { path: 'home', component: HomeComponent },
-      { path: 'informes', component: InformesComponent },
-      { path: 'inicio', component: InicioComponent },
-      { path: '**', pathMatch: 'full', redirectTo: 'login' },
-    ])
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
