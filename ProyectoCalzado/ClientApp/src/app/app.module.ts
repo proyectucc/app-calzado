@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 
 /// Rutas
 import { AppRoutingModule } from './apps-routing.module';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AppRoutingModule } from './apps-routing.module';
     InicioComponent,
     LoginComponent,
     InformesComponent,
-    FooterComponent
+    FooterComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,6 +35,7 @@ import { AppRoutingModule } from './apps-routing.module';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

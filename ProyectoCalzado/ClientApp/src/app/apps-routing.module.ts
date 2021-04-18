@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { InformesComponent } from './informes/informes.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'informes', component: InformesComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'create', component: CreateUserComponent },
+  { path: 'logout', component: LogoutComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'login' },
 ];
 
