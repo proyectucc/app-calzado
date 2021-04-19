@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +10,12 @@ import { CreateUserComponent } from './create-user/create.user.component';
 import { LoginComponent } from './login/login.component';
 import { InformesComponent } from './informes/informes.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormUserComponent } from './form-user/form.user.component';
+import { RegisEmpleadoComponent } from './regis-empleado/regis.empleado.component';
+/// Rutas
+import { AppRoutingModule } from './apps-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -20,20 +25,17 @@ import { InicioComponent } from './inicio/inicio.component';
     CreateUserComponent,
     InicioComponent,
     LoginComponent,
-    InformesComponent
+    InformesComponent,
+    FooterComponent,
+    FormUserComponent,
+    RegisEmpleadoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: 'login', component: LoginComponent },
-      { path: 'home', component: HomeComponent },
-      { path: 'informes', component: InformesComponent },
-      { path: 'inicio', component: InicioComponent },
-      { path: '**', pathMatch: 'full', redirectTo: 'login' },
-    ])
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

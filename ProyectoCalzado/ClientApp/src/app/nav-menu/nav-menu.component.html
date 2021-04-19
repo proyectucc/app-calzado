@@ -1,9 +1,8 @@
 <header>
-  <nav
+  <!-- <nav
     class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
   >
     <div class="container">
-      <!-- <a class="navbar-brand" [routerLink]="['/']">Cerrar Sesión</a> -->
       <button
         class="navbar-toggler"
         type="button"
@@ -31,11 +30,22 @@
 
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/inicio']"
-              >Vistas</a
+              >Nosotros</a
             >
           </li>
         </ul>
       </div>
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-light bg-light">
+    <form class="container-fluid justify-content-start">
+      <button class="btn btn-outline-success me-2" type="button" [routerLink]="['/inicio']">Nosotros</button>
+      <button class="btn btn-sm btn-outline-secondary" type="button" [routerLink]="['login']">Login</button>
+    </form>
   </nav>
+
+
+
+
 </header>

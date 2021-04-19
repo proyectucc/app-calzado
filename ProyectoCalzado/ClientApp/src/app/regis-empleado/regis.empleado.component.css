@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.custom {
+  cursor: pointer;
+  border: 3px solid #FF7052;
+  border-radius: 5%;
+}
+.custom:hover {
+  background-color: #FF7052;
+  color: #ffffff;
+}
+
+.form-container h1 {
+  background: #43d1af;
+  padding: 10px 0;
+  font-size: 180%;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px -16px -16px -16px;
+}
+.form-container input[type="Nom_usuario"],
+.form-container input[type="Contraseña"],
+.form-container textarea{
+  transition: all 0,30% ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3px ;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-container .btn-registrar{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5%;
+  background: #43d1af;
+  border-bottom: 2px solid #30c29e;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+  font-size: 30px;
+  margin: 50px -16px; 
+}
+.form-container .btn-registrar:hover{
+  background: #2ebc99;
+}

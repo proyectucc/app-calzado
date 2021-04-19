@@ -1,5 +1,5 @@
 ﻿/* Set background image (pattern)*/
-
+/*
 *{
   -ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -19,7 +19,7 @@ html, body{
   font-weight: 200;
 }
 
-/* Start styles inn form*/
+/* Start styles inn form
 
 .login{
   position: relative;
@@ -64,7 +64,6 @@ html, body{
   height: 60px;
   display: block;
   margin: 0 auto -15px auto;
-  background: #FF7052;
   border: 1px solid #FF7052;
   overflow: hidden;
   color: #fff;
@@ -97,8 +96,57 @@ input:invalid {
 
 input:valid {
   border: 2px solid black;
+  background-color: #ffffff;
 }
 
 input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
+  background-image: linear-gradient(to right, pink, rgb(221, 167, 183));
+}
+
+.submit:invalid {
+  background-color: silver;
+}
+
+.submit:valid {
+  background-color: #FF7052;
+  color: #ffffff;
+}*/
+
+
+
+
+
+
+.containerOwnApp {
+  box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+  padding-top: 15px;
+}
+
+.login-page {
+ padding: 18% 0 0;
+ margin: 0 auto 100px;
+ max-width: 360px;
+ position: relative;
+}
+
+.login-form {
+  box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+}
+
+.login-form-header {
+  padding-top: 16px;
+}
+
+.login-from-row {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.login-form-font-header {
+  font-size:30px;
+  font-weight: bold;
+}
+
+.login-form-font-header span {
+  color: #007C9B;
 }

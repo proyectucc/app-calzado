@@ -1,9 +1,35 @@
-<h1>Visualizar los módulos!</h1>
-<p>Welcome to your new single-page application, built with:</p>
+<h1 >MÓDULOS DE ADMINISTRACIÓN</h1>
 
-<p>
-  Reportes
-</p> <br><br>
-<p>
-  Creación de usuarios
-</p>
+<br><br><br><br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+    <div class="card custom" style="width: 280px; height: 270px;" [routerLink]="['/create']">
+      <div class="card-body">
+        <img class="image-card-height" src="../../assets/imagenes/asignacion.png" />
+        <h2 class="card-title">CREACIÓN DE USUARIOS</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-3 offset-1">
+    <div class="card custom" style="width: 285px; height: 270px;" [routerLink]="['/login']">
+      <div class="card-body">
+        <img class="image-card-height" src="../../assets/imagenes/admin.png" />
+        <h2 class="card-title">ACTUALIZACIÓN</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-3 offset-1">
+    <div class="card custom" style="width: 280px; height: 270px;" [routerLink]="['/informes']">
+      <div class="card-body">
+        <img class="image-card-height" src="../../assets/imagenes/informes.png" />
+        <h2 class="card-title">REPORTES</h2>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+<br><br><br><br><br><br><br><br>
