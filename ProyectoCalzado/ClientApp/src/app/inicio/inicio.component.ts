@@ -3,7 +3,7 @@ import { Component, Inject } from '@angular/core';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent {
   public forecasts: WeatherForecast[];
