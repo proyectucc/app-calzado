@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisEmpleadoComponent } from './regis-empleado/regis-empleado.component';
+import { FormUserComponent } from './form-user/form-user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     InformesComponent,
     FooterComponent,
-    LogoutComponent
+    LogoutComponent,
+    RegisEmpleadoComponent,
+    FormUserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

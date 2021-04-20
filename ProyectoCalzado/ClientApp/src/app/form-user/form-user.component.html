@@ -1,0 +1,52 @@
+<br><br>
+<h1>FORMULARIO DE CREACIÓN USUARIO</h1>
+
+<br>
+
+<div class="form-container">
+    <h1> Datos Usuario </h1>
+    <form>
+        <div class='row'>
+            <div class='col-3 offset-1'>
+                <input type="text" formControlName="Nom_usuario" placeholder="Nombre Usuario">
+
+            </div>
+            <div>
+                <div class='col-3 offset-3'>
+                    <input type="text" formControlName="Contraseña" placeholder="Password">
+                </div>
+            </div>
+          <!--  <div>
+                <div class='col-4 offset-9'>
+                    <input type="text" formControlName="Emple" placeholder="ID empleado">
+                </div>
+            </div>-->
+            <!--
+                <mat-form-field class="fcreacion">
+                    <input matInput [matDatepicker]="picker1" placeholder="Fecha creacion">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                  </mat-form-field>
+                <mat-form-field class="fterminacion">
+                    <input matInput [matDatepicker]="picker" placeholder="Fecha terminación">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                  </mat-form-field> -->
+
+            <button type="submit" class="btn-registrar">Registrar</button>
+
+        </div>
+    </form>
+<!--
+    <button type="submit" class="btn-registrar" [routerLink]="['/create']">VOLVER</button> -->
+
+    <br><br><br>
+
+    <div class="col-4 offset-5">
+        <div class="card custom" style="width: 180px; height: 70px;" [routerLink]="['/create']">
+          <div class="card-body">
+            <h2 class="card-title">VOLVER</h2>
+          </div>
+        </div>
+      </div>
+</div>

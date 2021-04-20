@@ -1,0 +1,60 @@
+<br><br>
+<h1>FORMULARIO DE CREACIÓN EMPLEADO</h1>
+
+<br>
+
+<div class="form-container">
+    <h1> Datos Empleado </h1>
+    <form >
+        <div class='row'>
+            <div class='col-3 offset-2'>
+                <input type="text" formControlName="PNom_empleado" placeholder="Primer Nombre ">
+
+            </div>
+            <div>
+                <div class='col-3 offset-5'>
+                    <input type="text" formControlName="SNome_empleado" placeholder="Segundo Nombre">
+                </div>
+            </div>
+            <div class='col-3 offset-2'>
+                <input type="text" formControlName="PApe_empleado" placeholder="Primer Apellido">
+
+            </div>
+            <div>
+                <div class='col-3 offset-5'>
+                    <input type="text" formControlName="SApe_empleado" placeholder="Segundo Apellido">
+                </div>
+            </div>
+            <div class='col-3 offset-2'>
+                <input type="text" formControlName="No_ident" placeholder="N° identificación">
+
+            </div>
+            <!--
+                <mat-form-field class="fcreacion">
+                    <input matInput [matDatepicker]="picker1" placeholder="Fecha creacion">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                  </mat-form-field>
+                <mat-form-field class="fterminacion">
+                    <input matInput [matDatepicker]="picker" placeholder="Fecha terminación">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                  </mat-form-field> -->
+            <div>
+                <div class='col-3 offset-5'>
+                    <input type="text" formControlName="Email" placeholder="Email">
+                </div>
+            </div>
+            <button type="submit" class="btn-registrar">Registrar</button>
+
+            <div class="col-4 offset-5">
+                <div class="card custom" style="width: 120px; height: 70px;" [routerLink]="['/create']">
+                    <div class="card-body">
+                        <h5 class="card-title">VOLVER</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
