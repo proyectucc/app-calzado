@@ -4,10 +4,14 @@ h1 {
 h2 {
   text-align: center;
 }
+h6 {
+  text-align: center;
+}
 .custom {
   cursor: pointer;
   border: 3px solid #FF7052;
   border-radius: 5%;
+  align-items: left;
 }
 .custom:hover {
   background-color: #FF7052;
