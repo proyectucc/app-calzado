@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,12 +9,16 @@ import { CreateUserComponent } from './create-user/create.user.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { InformesComponent } from './informes/informes.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
-import { LogoutComponent } from './logout/logout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisEmpleadoComponent } from './regis-empleado/regis-empleado.component';
 import { FormUserComponent } from './form-user/form-user.component';
+import { HeaderComponent } from './header/header.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 @NgModule({
   declarations: [
@@ -26,18 +30,25 @@ import { FormUserComponent } from './form-user/form-user.component';
     LoginComponent,
     InformesComponent,
     FooterComponent,
-    LogoutComponent,
     RegisEmpleadoComponent,
-    FormUserComponent
+    FormUserComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
+    NgxSliderModule,
+
 
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
